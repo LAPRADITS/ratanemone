@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RATANEMONE</title>
+</head>
+<body>
+    <header>
+        <h1>CALCULAR EL AREA DE LAS FIGURAS</h1>
+    </header>
+
+    <section>
+        <p>Que figura es la que quiere sacar el area</p>
+        <label for="opciones">Selecciona la figura</label>
+        <select name="figuras" id="figura">
+            <option value="triangulo">Triangulo</option>
+            <option value="rectangulo">Rectangulo</option>
+            <option value="cuadrado">cuadrado</option>
+        </select>
+    </section>
+
+    <section>
+        <p>Ingrese la altura</p>
+        <label for="altura"></label>
+        <input type="number" placeholder="Altura" id="altura">
+    </section>
+    
+    <section>
+        <p>Ingrese el ancho</p>
+        <label for="ancho"></label>
+        <input type="number" placeholder="Ancho" id="ancho">
+    </section>
+
+    <section>
+        <label for="Resultado"></label>
+        <input type="text" disabled id="resultado">
+    </section>
+
+    <section>
+        <input type="button" value="Calcular" onclick="calcular()" id="calcular">
+        <input type="button" value="Reset" onclick="reset()" id="reset">
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
